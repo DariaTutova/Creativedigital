@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<meta name="description" content="" />
+	<link rel="icon" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+<body>
+	<!-- BEGIN ba-container  -->
+	<div class="ba-container">
+	<header class="ba-header">
+	<span><img class="logo" src="img/logo.png"/></span>
+	<ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#3">Services</a></li>
+                <li><a href="#">Contact</a></li>
+     </ul>
+    <div class="head">
+  <h1>Creative Digital Project</h1>
+  <p class="text">Duis mollis, est non commodo luctus,<br>nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+  </div>
+
+  
+		</header>
+		<main>
+		<div class="container-fluid">
+		<div class="row">
+  <div class="col-4"><img class="about" src="img/rectangle8.png"/></div>
+  <div class="col-8"><p> Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi<br>
+  porta gravida at eget metus. Donec ullamcorper nulla non metus auctor<br>fringilla.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor<br>auctor.<br><br>Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi<br>porta gravida at eget metus. Donec ullamcorper nulla non metus auctor<br>fringilla.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor<br>auctor.</p><span><button>Learn More</button></span></div>
+</div>
+</div>
+
+<div class="container-fluid-1">
+<div class="row big">
+<div class="row">
+  <div class="col-2-box"><img class="graphic" src="img/graphic.png"/><h2>Graphic design</h2></div>
+  <div class="col-2-box1"><img class="web" src="img/web.png"/><h2>Web development</h2></div>
+  <div class="w-100"></div>
+  <div class="col-2-box1"><img class="seo" src="img/seo.png"/><h2>Seo&Marketing</h2></div>
+  <div class="col-2-box"><img class="mobile" src="img/mobile.png"/><h2>Mobile Development</h2></div>
+  </div>
+   </div>
+  <div class="serv"><img class="services" src="img/services.png"/><h2 id="3">Our Services</h2></div>
+
+ </div>
+</div>
+
+
+		</main>
+		<footer class="ba-footer">
+
+		</footer>
+	</div>
+	<!-- END ba-container -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="imagefill/js/jquery-imagefill.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="imagefill/js/jquery-imagefill.js"></script>
+	
+<script>
+$(".navigation").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 2000);
+            });
+</script>
+
+
+
+</body>
+</html>
